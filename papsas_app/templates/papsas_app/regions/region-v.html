@@ -1,0 +1,52 @@
+{% extends 'papsas_app/layout.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'papsas_app/css/regional_chapter.css' %}">
+{% endblock %}
+
+{% block body %}
+<main class="main">
+
+    <!-- Region Hero Section -->
+    <section class="region-hero">
+        <h1 class="region-title">PAPSAS BICOL REGION</h1>
+        <h3 class="section-subtitle">The Official page of the Philippine Association of Practitioners of Student Affairs and Services (PAPSAS) Region 5 (Bicol) Chapter</h3>
+    </section>
+
+        <!-- Event Section -->
+    <section class="video-post container">
+        <!-- Video section -->
+        <div class="video-wrapper">
+            <video controls>
+                <source src="/media/papsas_app/videos/bicolvideo1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Title and caption section -->
+        <div class="video-content">
+            <h3 class="video-title">𝐏𝐀𝐏𝐒𝐀𝐒 𝐑𝐞𝐠𝐢𝐨𝐧 𝟓 𝐂𝐡𝐚𝐩𝐭𝐞𝐫 𝐥𝐚𝐮𝐧𝐜𝐡𝐞𝐬 𝐁𝐢𝐜𝐨𝐥 𝐘𝐨𝐮𝐧𝐠 𝐋𝐞𝐚𝐝𝐞𝐫𝐬 𝐒𝐮𝐦𝐦𝐢𝐭</h3>
+            <p class="video-caption">
+                The Region 5 Chapter of the Philippine Association of Practitioners of Student Affairs and Services, Inc. (PAPSAS) 
+                launched the Bicol Young Leaders Summit (BYLS) as its flagship student development program.<br><br>
+
+                The 1st PAPSAS BYLS was hosted by the Ateneo de Naga University, Naga City, on January 20 – 21, 2023. 
+                More than 200 student leaders, student affairs and services (SAS) administrators and staff, and advisers 
+                of student councils and organizations from Bicol Region participated in this event.<br><br>
+
+                The summit featured three resource speakers, namely: Ralph Jacinto Quiblat, director of the Ateneo de Manila 
+                University Office of Student Activities; Magno Edilberto Conag III, founder and CEO of Nueca Technologies, Inc.; 
+                and Ben Secretario, president of the Ten Outstanding Boy Scouts of the Philippines Association. 
+                Consistent with the BYLS’s whole-person formation framework, the said speakers discussed Self Awareness, 
+                Servant Leadership, Project Development, and Collaboration & Network Building.<br><br>
+
+                Other highlights included The Amazing Race-inspired games, “BYLS Got Talent”, project development presentations, 
+                and a commitment-building pledge led by student leader Jerwin Roy Villacruz. 🎉
+            </p>
+        </div>
+    </section>
+
+
+</main>
+{% endblock %}
