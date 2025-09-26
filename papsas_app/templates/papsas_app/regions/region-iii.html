@@ -7,25 +7,46 @@
 
 {% block body %}
 <main class="main">
-    <!-- Region Intro Section (same structure as homepage hero) -->
+    <!-- Page Title at Top Center -->
+    <header class="page-title">
+        <h1 class="page-title__text">PAPSAS REGION 3</h1>
+    </header>
+
+    <!-- Region Intro Section (side-by-side layout) -->
     <section class="home">
         <div class="home__container container">
+            <img src="/media/papsas_app/images/oathgrid.jpg" alt="Region 3 Oath-Taking" class="feature-img">
             <div class="home__data">
-                <h1 class="home__title">PAPSAS REGION 3</h1>
-                <!-- Merge subtitle into title or description for consistency -->
                 <p class="home__description">
                     Clark-Pampanga – On June 26, 2025, the Philippine Association of Practitioners of Student Affairs and Services (PAPSAS) in Region 3 conducted its official oath-taking ceremony for the newly elected officers and members of the Board of Directors at Hotel Seoul, Clark-Pampanga. The occasion marked a remarkable milestone in the history of the regional chapter, as it reaffirmed its unwavering commitment to advance student welfare and promote quality services within the academic community. The ceremony stood not only as a formal recognition of new leadership but also as a symbol of renewed dedication to the organization’s long-standing mission and vision.<br><br>
                     During the program, the incoming officers and directors solemnly pledged to uphold their duties with integrity and professionalism, ensuring that their actions remain aligned with the values of PAPSAS. Their commitment reflected the broader goals of the association: to continuously support student affairs practitioners, provide platforms for growth, and foster collaboration across institutions. The event also underscored the steadfast participation of the membership body, whose collective effort and dedication are essential in sustaining the chapter’s initiatives. By honoring its leaders and highlighting the spirit of service among its members, PAPSAS Region 3 reinforced its role as a vital force in strengthening student affairs and services across the region.
                 </p>
             </div>
-            <img src="/media/papsas_app/images/oathgrid.jpg" alt="Region 3 Oath-Taking" class="feature-img">
+        </div>
+    </section>
+
+    <!-- Divider to indicate different content, aligned with content edges -->
+    <div class="container">
+        <div class="content-divider"></div>
+    </div>
+
+    <!-- Adding New Content -->
+    <section class="home">
+        <div class="home__container container">
+            <img src="/media/papsas_app/images/forumgrid.jpg" alt="Region 3 Oath-Taking" class="feature-img">
+            <div class="home__data">
+                <p class="home__description">
+                    Clark-Pampanga – On June 26, 2025, the Philippine Association of Practitioners of Student Affairs and Services (PAPSAS) in Region 3 conducted its official oath-taking ceremony for the newly elected officers and members of the Board of Directors at Hotel Seoul, Clark-Pampanga. The occasion marked a remarkable milestone in the history of the regional chapter, as it reaffirmed its unwavering commitment to advance student welfare and promote quality services within the academic community. The ceremony stood not only as a formal recognition of new leadership but also as a symbol of renewed dedication to the organization’s long-standing mission and vision.<br><br>
+                    During the program, the incoming officers and directors solemnly pledged to uphold their duties with integrity and professionalism, ensuring that their actions remain aligned with the values of PAPSAS. Their commitment reflected the broader goals of the association: to continuously support student affairs practitioners, provide platforms for growth, and foster collaboration across institutions. The event also underscored the steadfast participation of the membership body, whose collective effort and dedication are essential in sustaining the chapter’s initiatives. By honoring its leaders and highlighting the spirit of service among its members, PAPSAS Region 3 reinforced its role as a vital force in strengthening student affairs and services across the region.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Region 3 Video Section -->
     <section class="video-papsas">
         <div class="video-feed-container">
-            <h2 class="video-title-container">VIDEO SECTION</h2> <!-- Match home page title -->
+            <h2 class="video-title-container">VIDEO SECTION</h2>
             <!-- First Video -->
             <div class="video-post">
                 <div class="video-wrapper">
@@ -52,10 +73,23 @@
                     <p class="video-caption">Thank you CHED R3 for a fruitful dialogue with PAPSAS R3. Looking forward to more collaborative activities with CHED R3.</p>
                 </div>
             </div>
+            <!-- Third Video -->
+            <div class="video-post">
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="/media/papsas_app/videos/bicolvideo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-content">
+                    <h3 class="video-title">SASamahan SASabayan: CHEDRO-III & PAPSAS</h3>
+                    <p class="video-caption">Thank you CHED R3 for a fruitful dialogue with PAPSAS R3. Looking forward to more collaborative activities with CHED R3.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Add Footer (copied from index.html) -->
+    <!-- Footer -->
     <button onclick="scrollToTop()" id="scrollUpButton" title="Go to top">↑</button>
     <footer class="footer">
         <div class="footer__container container">
@@ -82,7 +116,6 @@
     </footer>
 </main>
 
-<!-- Add Scroll-to-Top Script -->
 <script>
     window.onscroll = function() {
         let button = document.getElementById("scrollUpButton");
